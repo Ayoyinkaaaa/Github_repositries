@@ -14,7 +14,7 @@ function Header() {
             <Link className="Link" to="/Repo">Respositories</Link>
           </li>
           <li>
-          <Link className="Link">Projects </Link>
+          <Link className="Link" to="/Error"> 404 page</Link>
           </li>
         </ul>
       </nav>

@@ -5,6 +5,7 @@ import Repo from  '../Components/Repo'
 import {Routes, Route} from "react-router-dom"
 import AppOutlet from '../Components/AppOutlet'
 import Singlerepo from '../Components/Singlerepo'
+import Error from '../Components/Error'
 
 import './App.css'
 
@@ -32,6 +33,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Welcome />}/>
         <Route path='/Repo' element={<Repo repos />}/>
+        <Route path='/Error' element={<Error/>}/>
         <Route path='/Singlerepo' element={<AppOutlet />}>
           <Route path="/Singlerepo/:repoName" element={<Singlerepo/>} />
         </Route>
