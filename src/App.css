@@ -24,7 +24,7 @@ header {
 nav ul{
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+   
 }
 
 nav ul li{
@@ -54,19 +54,54 @@ header button:hover {
 }
 button {
     color: white;
-  }
+}
   
+.Nav-mobile{
+    display: none;
+}
 
+.openside-menu {
+    display: none;
+}
+.Nav-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 200px;
+    width: 250px;
+    z-index: 999;
+     background-color: #b6dffc; 
+    /* box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2); */
+    padding: 10px 10px;
+    display: none;
+    border-radius: 10px;
+}
+.Nav-mobile ul {
+    width: 100%;
+    margin-block: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   
+  }
+.Nav-mobile ul li {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+section.Welcome {
+    padding-inline: 5%;
+}
 div.Hello{
     text-align: center;
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
     line-height: 1;
     margin-top: 60px;
 
 }
 div.Hello h1 {
-    font-size: 50px;
+    font-size: 3rem;
     color: #007bff;
 }
 div.Hello h3 {
@@ -271,4 +306,19 @@ font-size: 1.5rem ;
 
 .error-page p{
     font-size: 1.2rem;
+}
+
+
+@media screen and (max-width: 840px){
+    
+ nav.Nav-desktop {
+    display: none;
+ }
+
+ .Nav-button {
+    display: none;
+ }
+ .openside-menu {
+    display: block;
+ }
 }

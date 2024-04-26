@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 function Welcome() {
   return (
-    <section>
+    <section className="Welcome">
       <div className= 'Hello'>
         <h1 >
           Hi, I am a<br />
